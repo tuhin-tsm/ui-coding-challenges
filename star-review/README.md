@@ -2,5 +2,5 @@
 
 - [x] Click to rate
 - [x] Default value
-- [ ] Hover to preview and show feedback
+- [x] Hover to preview and show feedback
 - [ ] Rating precision
