@@ -12,6 +12,7 @@ export function Center(props: Props) {
         alignItems: "center",
         justifyContent: "center",
         minHeight: "30vh",
+        flexDirection: "column",
       }}
     >
       {props.children}

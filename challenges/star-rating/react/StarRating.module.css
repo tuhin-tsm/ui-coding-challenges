@@ -18,4 +18,5 @@
 .star {
   height: 2em;
   width: 2em;
+  cursor: pointer;
 }
