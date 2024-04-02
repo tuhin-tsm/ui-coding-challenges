@@ -37,3 +37,15 @@
   font-size: 24px;
   margin-bottom: 1rem;
 }
+
+.winner {
+  color: #22c55e;
+}
+
+.tick {
+  color: #3b82f6;
+}
+
+.cross {
+  color: #a855f7;
+}

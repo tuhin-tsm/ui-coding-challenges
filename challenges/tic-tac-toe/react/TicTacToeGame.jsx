@@ -61,6 +61,7 @@ export function TicTacToeGame() {
           <ol>{renderMoves}</ol>
         </div>
       </div>
+      <pre>{JSON.stringify(currentSquares)}</pre>
     </div>
   );
 }

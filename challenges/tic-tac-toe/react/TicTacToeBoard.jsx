@@ -5,8 +5,8 @@ import { calculateWinner } from "../calculateWinner";
 
 export function TicTacToeBoard({ player, squares, onPlay }) {
   const handleClick = (i) => {
-    if (squares[i]) {
-      // already marked
+    if (squares[i] || calculateWinner(squares)) {
+      // already marked or won
       return;
     }
     const nextSquares = squares.slice();
@@ -16,7 +16,7 @@ export function TicTacToeBoard({ player, squares, onPlay }) {
 
   const winner = calculateWinner(squares);
   let status;
-  if (calculateWinner(squares)) {
+  if (winner) {
     status = "Winner: " + winner;
   } else {
     status = "Next Player: " + (player === "one" ? "✓" : "X");
@@ -24,7 +24,9 @@ export function TicTacToeBoard({ player, squares, onPlay }) {
 
   return (
     <>
-      <div className={styles.status}>{status}</div>
+      <div className={`${styles.status} ${winner && styles.winner}`}>
+        {status}
+      </div>
       <div className={styles.board}>
         {[...Array(9).keys()].map((index) => (
           <Square
