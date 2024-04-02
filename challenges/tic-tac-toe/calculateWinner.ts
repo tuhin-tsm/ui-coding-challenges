@@ -21,7 +21,7 @@ export function calculateWinner(squares: []) {
     const [a, b, c] = lines[i];
 
     // ✓ or X, whatever is on position a, must also present on other two positions
-    if (squares[a] && squares[a] === squares[b] && squares[c]) {
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }
   }
