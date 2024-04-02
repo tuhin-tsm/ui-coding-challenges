@@ -1,7 +1,21 @@
-.main {
+.app {
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.moves {
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+
+.button {
+  padding: 4px;
 }
 
 .board {

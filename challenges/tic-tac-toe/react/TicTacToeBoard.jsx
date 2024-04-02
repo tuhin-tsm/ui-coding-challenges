@@ -3,10 +3,7 @@ import { Square } from "./Square";
 import { useState } from "react";
 import { calculateWinner } from "../calculateWinner";
 
-export function TicTacToeBoard() {
-  const [player, setPlayer] = useState("one");
-  const [squares, setSquares] = useState(Array(9).fill(null));
-
+export function TicTacToeBoard({ player, squares, onPlay }) {
   const handleClick = (i) => {
     if (squares[i]) {
       // already marked
@@ -14,8 +11,7 @@ export function TicTacToeBoard() {
     }
     const nextSquares = squares.slice();
     nextSquares[i] = player === "one" ? "✓" : "X";
-    setSquares(nextSquares);
-    setPlayer(player === "one" ? "two" : "one");
+    onPlay(nextSquares);
   };
 
   const winner = calculateWinner(squares);
@@ -27,20 +23,17 @@ export function TicTacToeBoard() {
   }
 
   return (
-    <div className={styles.main}>
-      <div>
-        <div className={styles.status}>{status}</div>
-        <div className={styles.board}>
-          {[...Array(9).keys()].map((index) => (
-            <Square
-              key={index}
-              handleClick={() => handleClick(index)}
-              value={squares[index]}
-            />
-          ))}
-        </div>
+    <>
+      <div className={styles.status}>{status}</div>
+      <div className={styles.board}>
+        {[...Array(9).keys()].map((index) => (
+          <Square
+            key={index}
+            handleClick={() => handleClick(index)}
+            value={squares[index]}
+          />
+        ))}
       </div>
-      <pre>{JSON.stringify(squares)}</pre>
-    </div>
+    </>
   );
 }
