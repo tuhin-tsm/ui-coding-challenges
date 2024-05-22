@@ -2,11 +2,11 @@
 
 | Sl No | Problem                                                                                                              | GitHub Link | Vanilla | React |
 | ----- | -------------------------------------------------------------------------------------------------------------------- | ----------- | ------- | ----- |
-| 1     | Star rating                                                                                                          | [Link](#)   | [ ]     | [ ]   |
-| 2     | Design Popover                                                                                                       | [Link](#)   | [ ]     | [ ]   |
-| 3     | Design Accordion (Amazon)                                                                                            | [Link](#)   | [ ]     | [ ]   |
+| 1     | Star rating                                                                                                          | [Link](#)   | [ ]     | [x]   |
+| 2     | Design Popover                                                                                                       | [Link](#)   | [ ]     | [x]   |
+| 3     | Design Accordion (Amazon)                                                                                            | [Link](#)   | [ ]     | [x]   |
 | 4     | Design Carousel                                                                                                      | [Link](#)   | [ ]     | [ ]   |
-| 5     | Design grid using HTML/CSS and Javascript with search and sort, event bubbling (Amazon)                              | [Link](#)   | [ ]     | [ ]   |
+| 5     | Design grid using HTML/CSS and Javascript with search and sort, event bubbling (Amazon)                              | [Link](#)   | [x]     | [ ]   |
 | 6     | Design Nav bar                                                                                                       | [Link](#)   | [ ]     | [ ]   |
 | 7     | Infinite Scroll                                                                                                      | [Link](#)   | [ ]     | [ ]   |
 | 8     | Typeahead / autocomplete                                                                                             | [Link](#)   | [ ]     | [ ]   |

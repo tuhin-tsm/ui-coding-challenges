@@ -1,0 +1,44 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  /* The border-collapse property sets whether table borders should collapse into a single border 
+  or be separated as in standard HTML. */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+th[data-order="asc"]:after {
+  content: " \2191"; /* Up arrow */
+}
+
+th[data-order="desc"]:after {
+  content: " \2193"; /* Down arrow */
+}

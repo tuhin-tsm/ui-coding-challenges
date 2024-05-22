@@ -12,4 +12,12 @@ export const pageLinks: PageLink[] = [
     href: "/tic-tac-toe",
     title: "Tic tac toe",
   },
+  {
+    href: "/popover",
+    title: "Popover",
+  },
+  {
+    href: "/accordion",
+    title: "Accordion",
+  },
 ];
